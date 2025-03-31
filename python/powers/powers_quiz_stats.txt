@@ -1,0 +1,10 @@
+Powers of Two Quiz - Game Statistics
+========================================
+
+========================================
+Date: 2025-03-31 13:05:11
+Total Questions: 1
+Correct Answers: 1
+Incorrect Answers: 0
+Time Taken: 6.19 seconds
+========================================
