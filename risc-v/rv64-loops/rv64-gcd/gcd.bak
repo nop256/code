@@ -1,0 +1,56 @@
+                .global gcd
+                .text
+
+gcd:
+	# a0 holds a on entry
+	# a1 holds b on entry
+	mv t0, a0
+	mv t1, a1
+	
+loop_start:
+	bne t0, t1, if_block	#jump to if_block if a != b:
+	mv a0, t0		#return a
+	j end			# jump to end
+
+if_block:
+	blt t0, t1, else	# jump to else_block if a < b
+	sub t0, t0, t1		# a = a-b
+	j loop_start		# jump back to start of loop
+	
+else:
+	sub t1, t1, t0
+	j loop_start		# jump back up to start of loop
+
+end:
+	ret
+
+
+
+
+
+
+
+
+
+
+
+
+# Euclid's algorithm
+# ==================
+#
+# Euclid's algorithm computes the greatest common divisor between two
+# integers. For simplicity we will only consider positive numbers. You
+# will implement rv64 code to mimic the following:
+#
+# ```
+# def gcd(a, b):
+#     while a != b:
+#         if a > b:
+#             a = a - b
+#         else:
+#             b = b - a
+#     return a
+#
+# For a full description of how it works, see the Wikipedia article:
+#
+# * https://en.wikipedia.org/wiki/Euclidean_algorithm

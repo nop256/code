@@ -1,0 +1,40 @@
+Calling gcd(15,5)
+  return value is ========> 5
+Calling gcd(28,7)
+  return value is ========> 7
+Calling gcd(36,60)
+  return value is ========> 12
+Calling gcd(101,10)
+  return value is ========> 1
+Calling gcd(37,18)
+  return value is ========> 1
+Calling gcd(48,180)
+  return value is ========> 12
+Calling gcd(100,200)
+  return value is ========> 100
+Calling gcd(105,60)
+  return value is ========> 15
+Calling gcd(987,111)
+  return value is ========> 3
+Calling gcd(91,364)
+  return value is ========> 91
+Calling gcd(198,14)
+  return value is ========> 2
+Calling gcd(56,42)
+  return value is ========> 14
+Calling gcd(21,14)
+  return value is ========> 7
+Calling gcd(69,51)
+  return value is ========> 3
+Calling gcd(144,72)
+  return value is ========> 72
+Calling gcd(91,104)
+  return value is ========> 13
+Calling gcd(150,300)
+  return value is ========> 150
+Calling gcd(462,1071)
+  return value is ========> 21
+Calling gcd(156,39)
+  return value is ========> 39
+Calling gcd(98,56)
+  return value is ========> 14

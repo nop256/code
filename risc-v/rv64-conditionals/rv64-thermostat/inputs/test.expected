@@ -1,0 +1,44 @@
+Calling thermostat with input => -5
+  thermostat returned =========> 1
+Calling thermostat with input => -1
+  thermostat returned =========> 1
+Calling thermostat with input => 0
+  thermostat returned =========> 1
+Calling thermostat with input => 1
+  thermostat returned =========> 1
+Calling thermostat with input => 5
+  thermostat returned =========> 1
+Calling thermostat with input => 32
+  thermostat returned =========> 1
+Calling thermostat with input => 60
+  thermostat returned =========> 1
+Calling thermostat with input => 66
+  thermostat returned =========> 1
+Calling thermostat with input => 67
+  thermostat returned =========> 1
+Calling thermostat with input => 68
+  thermostat returned =========> 0
+Calling thermostat with input => 69
+  thermostat returned =========> 0
+Calling thermostat with input => 70
+  thermostat returned =========> 0
+Calling thermostat with input => 73
+  thermostat returned =========> 0
+Calling thermostat with input => 74
+  thermostat returned =========> 0
+Calling thermostat with input => 75
+  thermostat returned =========> 0
+Calling thermostat with input => 76
+  thermostat returned =========> -1
+Calling thermostat with input => 77
+  thermostat returned =========> -1
+Calling thermostat with input => 80
+  thermostat returned =========> -1
+Calling thermostat with input => 99
+  thermostat returned =========> -1
+Calling thermostat with input => 100
+  thermostat returned =========> -1
+Calling thermostat with input => 115
+  thermostat returned =========> -1
+Calling thermostat with input => 1000000
+  thermostat returned =========> -1

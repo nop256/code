@@ -1,0 +1,13 @@
+{
+    "assignmentID": 4621,
+    "problems": {
+        "c-diamond": {
+            "id": 308,
+            "step": 1
+        },
+        "c-sieve": {
+            "id": 307,
+            "step": 1
+        }
+    }
+}

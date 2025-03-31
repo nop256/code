@@ -1,0 +1,52 @@
+<html><head></head><body><h2>Maze solver</h2>
+
+<p>In this assignment you will implement a simple maze solver as well
+as code to print out mazes. We will start with <code>print_maze</code>.</p>
+
+<h3>Print</h3>
+
+<p>The maze is represented as a 2-dimensional array. The dimensions of
+the array (the X size and Y size) are defined in <code>solve.h</code> and are
+constants. <code>main</code> creates an array and reads a maze in from standard
+in, and the maze is reprsented using one <code>char</code> value per square.
+Here is a simple example maze:</p>
+
+<pre><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+....@.....@.@.@.@.....@.....@.@
+@@@.@.@@@@@.@.@.@@@.@@@.@@@@@.@
+@.@.@.........@.....@.....@...@
+@.@.@@@@@.@.@@@.@.@@@@@.@@@.@@@
+@.@.@.....@.....@.@.@.@...@...@
+@.@.@@@@@.@@@.@@@@@.@.@.@@@.@@@
+@.....@.@...@...@...........@.@
+@.@.@@@.@.@@@@@@@@@.@@@@@.@@@.@
+@.@.@.@.....@.@.@.......@.....@
+@.@@@.@.@@@@@.@.@.@@@@@@@.@@@.@
+@.....@.@...............@.@...@
+@.@.@.@.@.@.@.@.@.@.@@@.@@@.@@@
+@.@.@.....@.@.@.@.@...@.@......
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</code></pre>
+
+<p>A <code>@</code> character represents a wall, and a <code>.</code> character represents a
+path. The maze always starts at the top left and ends at the bottom
+right.</p>
+
+<p>In this example maze the size is 31 across and 15 down, so it would
+be represented with the array:</p>
+
+<pre><code class="language-c">char field[15][31];
+</code></pre>
+
+<p>but you should always use the values <code>SIZE_Y</code> and <code>SIZE_X</code> as
+defined in <code>solve.h</code>:</p>
+
+<pre><code class="language-c">char field[SIZE_Y][SIZE_X];
+</code></pre>
+
+<p>The <code>print_maze</code> function is given the array as its only input, and
+it should print the characters out to the screen with a newline at
+the end of each row. You can use <code>printf</code> for this, or you can use
+<code>putchar</code>, which is a more specialized function that prints a single
+character (run <code>man putchar</code> for details).</p>
+</body></html>

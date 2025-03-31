@@ -1,0 +1,13 @@
+{
+    "assignmentID": 1320,
+    "problems": {
+        "rv64-fibonacci": {
+            "id": 462,
+            "step": 1
+        },
+        "rv64-gcd": {
+            "id": 481,
+            "step": 1
+        }
+    }
+}

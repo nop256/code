@@ -1,0 +1,46 @@
+<html><head></head><body><h2>Pencil markings: processing the entire board</h2>
+
+<p>In this step you will calculate pencil markings for the entire board
+using the helper functions from the previous steps. Implement the
+function <code>pencil_marks</code> in the file <code>pencil_marks.s</code>:</p>
+
+<pre><code>pencil_marks(board, table) -&gt;
+    0: no changes
+    1: something changed
+</code></pre>
+
+<p>A Sudoku board has 27 groups comprised of nine rows, nine columns,
+and nine 3×3 boxes. At a high level this function must</p>
+
+<ul>
+<li>Loop over the 27 groups on the board</li>
+<li>For each group, call <code>get_used</code> to calculate the used set, then
+call <code>clear_used</code> to cross those values off unsolved squares in
+the same group</li>
+<li>If anything changed on the entire board, return true</li>
+</ul>
+
+<p>This function is not a leaf function so you must use the stack to
+store the return address and any saved registers that you need for
+local variables. This function must also walk over the lookup table
+to find the row corresponding to each group:</p>
+
+<pre><code>pencil_marks(board, table) -&gt; 0: no changes, 1: something changed
+    changed = 0
+    for group_start = 0; group_start &lt; 27*9; group_start += 9
+        used = get_used(board, table+group_start)
+        delta = clear_used(board, table+group_start, used)
+        if delta != 0:
+            changed = 1
+    return changed
+</code></pre>
+
+<p>You must track if changes are made because calculating pencil marks
+will sometimes solve squares by narrowing the set of possible values
+down to one, which in our representation is equivalent to a solved
+square. That may change the correct set of pencil marks for groups
+that have already been processed, so to get a complete set of
+correct pencil marks we may need to run <code>calc_pencil</code> multiple times
+until no further changes are made. <code>_start</code> does this, so for some
+of the test cases you will see <code>pencil_marks</code> called multiple times.</p>
+</body></html>

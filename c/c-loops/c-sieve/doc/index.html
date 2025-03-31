@@ -1,0 +1,55 @@
+<html><head></head><body><h2>The Sieve of Eratosthenes</h2>
+
+<p>The sieve of Eratosthenes is an algorithm for finding all prime
+numbers up to a fixed limit. See this Wikipedia articles for more
+details and an animated demo of how it works:</p>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a></li>
+</ul>
+
+<p>Write a function called <code>sieve</code> in <code>sieve.c</code> that matches the
+prototype given in <code>main.c</code>. Your code should implement the sieve:</p>
+
+<ul>
+<li>You will be given an array of bool values (passed in as a
+pointer) and the size of that array.</li>
+<li>Initialize all elements of the array to true: you will start by
+assuming every number is prime (true) and then cross off values
+(mark as false) that prove to be non-prime.</li>
+<li>You can ignore elements 0 and 1.</li>
+</ul>
+
+<p>The basic approach is to scan the list starting at 2. By the time
+you get to a number, the list will accurately name that number as
+prime or non-prime.</p>
+
+<ul>
+<li>The outer loop starts at 2 and counts up to size (it can
+actually stop at the square root of size--to test this, square
+your counter and compare that with size instead of using the
+counter itself).</li>
+<li>If the number is non-prime, immediately skip to the next
+iteration of the loop.</li>
+<li>For prime numbers, cross off (set to false) every multiple of
+that number up to size.</li>
+</ul>
+
+<p>Note that you should not be using multiplication, division, or the
+modulo (remainder) operator. The only exception is when testing if
+the outer loop is finished (squaring the counter to compare it with
+the size of the list).</p>
+
+<p>This is a very efficient way to accomplish this task. Each non-prime
+number may be crossed off multiple times, but only once for each
+unique prime factor, and that tends to be a small number. In
+particular, this is much more efficient than testing each number
+in the range individually.</p>
+
+<p>You do not need to print out any results or return anything. Since
+you are modifying the array in place, <code>main</code> will be able to see the
+results.</p>
+
+<p>Take a few minutes to read through <code>main</code> to see how an array can be
+allocated and freed.</p>
+</body></html>
