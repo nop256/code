@@ -1,0 +1,21 @@
+{
+    "assignmentID": 4021,
+    "problems": {
+        "cs1400-sneks-34_01-mutability_lower_rent": {
+            "id": 217,
+            "step": 1
+        },
+        "cs1400-sneks-34_02-mutability_appending_strings": {
+            "id": 216,
+            "step": 1
+        },
+        "cs1400-sneks-34_03-mutability_repeat_louder": {
+            "id": 218,
+            "step": 1
+        },
+        "cs1400-sneks-34_04-mutability_wrong_return": {
+            "id": 219,
+            "step": 1
+        }
+    }
+}

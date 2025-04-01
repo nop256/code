@@ -1,0 +1,17 @@
+{
+    "assignmentID": 2099,
+    "problems": {
+        "cs1400-sneks-23_01-scope_outside_perimeter": {
+            "id": 163,
+            "step": 1
+        },
+        "cs1400-sneks-23_02-scope_weekend_off": {
+            "id": 164,
+            "step": 1
+        },
+        "cs1400-sneks-23_03-scope_calling_inside": {
+            "id": 162,
+            "step": 1
+        }
+    }
+}

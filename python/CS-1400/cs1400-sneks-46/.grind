@@ -1,0 +1,17 @@
+{
+    "assignmentID": 7459,
+    "problems": {
+        "cs1400-sneks-46_01-modules_slice_of_pi": {
+            "id": 175,
+            "step": 1
+        },
+        "cs1400-sneks-46_02-modules_string_of_letters": {
+            "id": 176,
+            "step": 1
+        },
+        "cs1400-sneks-46_03-modules_the_choice": {
+            "id": 178,
+            "step": 1
+        }
+    }
+}

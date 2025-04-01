@@ -1,0 +1,21 @@
+{
+    "assignmentID": 4018,
+    "problems": {
+        "cs1400-sneks-30_01-lists_calorie_list": {
+            "id": 86,
+            "step": 1
+        },
+        "cs1400-sneks-30_02-lists_book_list": {
+            "id": 87,
+            "step": 1
+        },
+        "cs1400-sneks-30_03-lists_emptiness": {
+            "id": 89,
+            "step": 1
+        },
+        "cs1400-sneks-30_04-lists_listification": {
+            "id": 88,
+            "step": 1
+        }
+    }
+}
