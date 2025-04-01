@@ -55,7 +55,7 @@ MIT — feel free to learn from or build on this repo!
 
 ## 🙋‍♂️ About Me
 
-I'm a student of Computer Science with a strong interest in systems-level programming, machine learning, and software engineering.
+I'm a student of Computer Science with a strong interest in systems-level programming, AI development,  machine learning, and software engineering.
 I created this repo to build discipline, track improvement, and hopefully help others along the way.
 
 
