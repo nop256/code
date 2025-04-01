@@ -16,9 +16,9 @@ The goal is to demonstrate progress, develop strong fundamentals, and build a so
 ---
 
 ## 📁 Folder Structure
-/c # Practice exercises using
-/c/pointers
-/python # Practice exercises using Python
+- /c # Practice exercises using
+- /c/pointers
+- /python # Practice exercises using Python
 
 ---
 
