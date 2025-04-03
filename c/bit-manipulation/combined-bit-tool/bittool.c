@@ -18,12 +18,21 @@ int bit_tool(unsigned x, int index){
 	return count;
 }
 
+void print_binary(unsigned x){
+	for (int i = sizeof(x) * 8 - 1; i >= 0; i--){
+		printf("%d", (x>>i) &1);
+		if (i%4==0) printf(" ");	// Group by 4 bits
+	}
+	printf("\n");
+}
+
 int main(){
 	unsigned x;			// Allocate memory space to store unsigned int
 	int index;			// Allocate memory space to store an int
 
 	printf("Enter an unsigned integer value (decimal): ");
 	scanf("%u", &x);	// Scan formatted input, %u data type specifier, store in memory address of x
+	print_binary(x);
 
 	printf("\nEnter a bit index to operate on: ");
 	scanf("%d", &index);// Scan formatted input, %d data type specifier, store in memory address of index
