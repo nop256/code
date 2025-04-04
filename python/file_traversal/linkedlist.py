@@ -4,8 +4,6 @@ class Node:
         self.nxt = nxt        
 
 class Bag:
-    """A container class that stores unique items in an unordered manner."""
-
     def __init__(self):
         self.first=None
 
