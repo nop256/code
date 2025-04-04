@@ -1,0 +1,3 @@
+Enhance the Sorting 1 assignment by implementing the MergeSort, QuickSort, and ModifiedQuickSort.
+
+Be sure to test them good to make sure they work.

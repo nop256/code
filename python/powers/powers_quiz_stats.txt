@@ -8,3 +8,21 @@ Correct Answers: 1
 Incorrect Answers: 0
 Time Taken: 6.19 seconds
 ========================================
+
+========================================
+Date: 2025-04-02 17:34:23
+Total Questions: 5
+Correct Answers: 5
+Incorrect Answers: 0
+Time Taken: 29.45 seconds
+========================================
+
+========================================
+Date: 2025-04-02 17:35:35
+Total Questions: 10
+Correct Answers: 9
+Incorrect Answers: 1
+Time Taken: 52.66 seconds
+Incorrect Responses:
+  2⁴³ = 8T  -  You answered: 16T
+========================================

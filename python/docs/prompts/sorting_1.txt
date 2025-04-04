@@ -1,0 +1,7 @@
+Implement the BubbleSort, ShakerSort, and CountingSort.
+
+Make a support function called CreateRandomList(Size). It should create and return Size random integers all between 0 and Size-1 inclusive.
+
+Make a main() function that tests everything. For the BubbleSort, call CreateRandomList(10), make a copy of the returned list, BubbleSort the first list and use the built in sort method for the copy. Verify the results are the same to make sure your BubbleSort is working correctly.
+
+Repeat ALL the steps of the BubbleSort for the other two sorts.

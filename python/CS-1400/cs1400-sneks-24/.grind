@@ -1,0 +1,17 @@
+{
+    "assignmentID": 2098,
+    "problems": {
+        "cs1400-sneks-24_01-documenting_bad_lines": {
+            "id": 255,
+            "step": 1
+        },
+        "cs1400-sneks-24_02-documenting_bad_prints": {
+            "id": 256,
+            "step": 1
+        },
+        "cs1400-sneks-24_03-documenting_bad_body": {
+            "id": 257,
+            "step": 1
+        }
+    }
+}

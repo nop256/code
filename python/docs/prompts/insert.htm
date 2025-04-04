@@ -1,0 +1,33 @@
+Create a class called Student.
+The class should contain all the fields found in FakeNames.txt, which you can get from our Canvas Files page.
+For future assignments, you may need some or all of these other files from our Canvas Files page:
+FakeNames.txt
+DeleteNames.txt
+RetrieveNames.txt
+FakeNamesMedium.txt
+DeleteNamesMedium.txt
+RetrieveNamesMedium.txt
+FakeNamesBig.txt
+DeleteNamesBig.txt
+RetrieveNamesBig.txt
+
+Create a container class named Bag for storing unordered unique items.
+(We will be filling the container with Student objects, but it MUST support any kind of item.)
+For this assignment, the container class must support these methods: __init__, Insert, Exists, and Size.
+Code these methods of this abstract data type using a Python List implementation behind the scenes.
+
+If the Bag's Insert method get's an item that is the same as another item it already has, it should not add it again, but instead return False.
+Otherwise it should add it and return True.
+In order to detect if two items are duplicates, you will need to override the equal operator __eq__ for whatever type of items you are adding to the bag class.
+In our case, you need to override the __eq__(self,rhs) operator of the student class to compare their SSN fields.
+The Exists method should return True if the given item is in the bag, False otherwise.
+The Size method should return how many items are currently in the bag.
+In the next assignment you will add the methods __iter__ (for traversing), Delete, and Retrieve.
+
+In a main function, Declare an object of type Bag.
+Then write code that reads all the data from FakeNames.txt, makes a Student object for each line, and Inserts them into your bag.
+It should watch for the False returns when trying to Insert, and print error messages.
+Time how long the whole process takes, and have your main function print that.
+
+When that is done, call the Size() method of your bag container to find out how many students got added to it. NOTE of clarification: Don't try to optimize your code at this point.
+Just read lines from FakeNames.txt one at a time, make Student objects, and try to Insert them into your bag.

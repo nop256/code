@@ -37,7 +37,7 @@ class Bag:
     def delete(self,item):
         if not self.exists(item): return False
         if self.first.item == item: 
-            self.first == self.first.nxt
+            self.first = self.first.nxt
             return True
         current = self.first
         while current.nxt.item != item: current = current.nxt

@@ -1,0 +1,21 @@
+{
+    "assignmentID": 4022,
+    "problems": {
+        "cs1400-sneks-35_01-lists_strings_sum_string": {
+            "id": 214,
+            "step": 1
+        },
+        "cs1400-sneks-35_02-lists_strings_animal_splits": {
+            "id": 212,
+            "step": 1
+        },
+        "cs1400-sneks-35_03-lists_strings_hot_cold": {
+            "id": 213,
+            "step": 1
+        },
+        "cs1400-sneks-35_04-lists_strings_sum_user_input": {
+            "id": 215,
+            "step": 1
+        }
+    }
+}

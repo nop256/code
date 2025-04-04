@@ -1,0 +1,138 @@
+<html><head></head><body><h1>Wordle solver step 1</h1>
+
+<p>In this first step, you&#39;ll implement a string vector data structure and functions to read Wordle words from a file.</p>
+
+<h2>Learning Objectives</h2>
+
+<ul>
+<li>Implement a dynamic array (vector) in C</li>
+<li>Practice memory management with <code>malloc</code>, <code>realloc</code>, and <code>free</code></li>
+<li>Work with file I/O and string processing</li>
+<li>Handle errors appropriately</li>
+</ul>
+
+<h2>Project Overview</h2>
+
+<p>The Wordle Helper will assist in solving the Wordle game by suggesting optimal word guesses. For this step, you&#39;ll build:</p>
+
+<ol>
+<li>A dynamic string vector to store words</li>
+<li>Functions to read valid Wordle words from a file</li>
+</ol>
+
+<h2>Files Description</h2>
+
+<ul>
+<li><code>main.c</code>: Test program (provided)</li>
+<li><code>wordle.h</code>: Header file with definitions (provided)</li>
+<li><code>vector.c</code>: Implement your vector functions here</li>
+<li><code>read_words.c</code>: Implement your word reading function here</li>
+</ul>
+
+<h2>Implementation Tasks</h2>
+
+<h3>1. Vector Implementation</h3>
+
+<p>First, implement these functions in <code>vector.c</code>:</p>
+
+<h4><code>struct vector *vector_new(void)</code></h4>
+
+<p>Creates a new, empty vector:
+- Allocate memory for the vector struct using <code>malloc</code>
+- Set initial capacity to 16 elements
+- Set initial length to 0
+- Allocate memory for the array of string pointers
+- Return the new vector</p>
+
+<h4><code>void vector_push(struct vector *v, char *str)</code></h4>
+
+<p>Adds a string to the end of a vector:
+- If the vector is full (length equals capacity), double the capacity using <code>realloc</code>
+- Allocate memory for a copy of the string (remember the null terminator)
+- Copy the string using <code>strcpy</code>
+- Increment the vector&#39;s length</p>
+
+<h4><code>void vector_free(struct vector *v)</code></h4>
+
+<p>Frees all memory associated with a vector:
+- Free each string in the array
+- Free the array itself
+- Free the vector struct
+- Set pointers to NULL to prevent use after free</p>
+
+<h3>2. Word Reading Implementation</h3>
+
+<p>Next, implement the function in <code>read_words.c</code>:</p>
+
+<h4><code>struct vector *read_words(char *filename)</code></h4>
+
+<p>Reads valid words from a file:
+- Open the specified file with <code>fopen</code>
+- Read the file line by line with <code>fgets</code>
+- For each line:
+  - Remove the trailing newline character
+  - Check if the word is valid using the provided <code>is_valid_word</code> function
+  - Skip invalid words with a warning message to stdout
+  - Add valid words to a vector
+- Close the file and return the vector</p>
+
+<h3>Error Handling Guidelines</h3>
+
+<ul>
+<li>Fatal errors: Use <code>fprintf(stderr, ...)</code> followed by <code>exit(1)</code>
+
+<ul>
+<li>Examples: failed memory allocations, cannot open file</li>
+</ul></li>
+<li>Warnings: Use <code>printf(...)</code> and continue execution
+
+<ul>
+<li>Examples: invalid words, no valid words found</li>
+</ul></li>
+</ul>
+
+<p>Important: Writing to stderr will cause tests to fail. Only use stderr for truly fatal errors.</p>
+
+<h2>Implementation Strategy</h2>
+
+<p>We recommend implementing in this order:</p>
+
+<ol>
+<li><code>vector_new()</code> - Test it by running <code>make run</code></li>
+<li><code>vector_push()</code> - Test it after implementation</li>
+<li><code>vector_free()</code> - Test it after implementation</li>
+<li><code>read_words()</code> - Test it after everything else works</li>
+</ol>
+
+<h2>Testing Your Code</h2>
+
+<p>The provided <code>main.c</code> runs all tests in sequence. Each test function will:
+- Print information about what it&#39;s testing
+- Call your implementation
+- Print results that can be verified</p>
+
+<p>When you start, you&#39;ll see &#34;not implemented&#34; errors. As you implement each function, these errors will be replaced with actual test results.</p>
+
+<p>You don&#39;t need to modify the test code or create new tests.</p>
+
+<h2>Common Mistakes</h2>
+
+<ol>
+<li><strong>Memory Leaks</strong>: Always match <code>malloc</code> with <code>free</code></li>
+<li><strong>Buffer Overflow</strong>: Watch string lengths and allocate properly</li>
+<li><strong>String Termination</strong>: Remember to include space for the null terminator (<code>\0</code>)</li>
+<li><strong>Vector Capacity</strong>: Double the capacity when needed, not just increment it</li>
+<li><strong>Error Handling</strong>: Check return values from <code>malloc</code>, <code>realloc</code>, and <code>fopen</code></li>
+</ol>
+
+<h2>Testing Tips</h2>
+
+<ul>
+<li>Test each function immediately after implementing it</li>
+<li>Use <code>valgrind</code> to detect memory leaks (if available)</li>
+<li>Add temporary debug print statements if needed</li>
+<li>Check edge cases (empty files, exactly-full vectors)</li>
+</ul>
+
+<p>Good luck with your implementation!</p>
+</body></html>

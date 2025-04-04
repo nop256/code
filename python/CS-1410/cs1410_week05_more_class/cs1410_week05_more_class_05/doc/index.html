@@ -1,0 +1,50 @@
+<html><head></head><body><h2>Exercise: Farthest Planet</h2>
+
+<h3>Description</h3>
+
+<p>In this exercise, you will find which of
+a list of planets is farthest from the
+center of the star they orbit.  For each
+planet, you have the 3-dimensional coordinates
+of its location.</p>
+
+<p>A distance can be calculated using the
+3D version of the Pythagorean Theorem.
+In words it is the square root of the
+sum of the squares of all 3 coordinates.</p>
+
+<p>For example, if a planet is at x = 1, y = 2
+and z = 3, its distance is the square root
+of 1 + 4 + 9.</p>
+
+<h3>Function Name</h3>
+
+<p>farthest_planet</p>
+
+<h3>Parameters</h3>
+
+<ul>
+<li><code>planets</code>: A list of planets.  Each planet is a
+dictionary with keys <code>x</code>, <code>y</code>, and <code>z</code>.  The values
+of these keys are positive floating point values.
+These values represent the planet&#39;s coordinates,
+with the origin being the center of the star they orbit.</li>
+</ul>
+
+<h3>Return Value</h3>
+
+<p>The planet from <code>planets</code> that is farthest from the
+center of the star they orbit.</p>
+
+<h3>Examples</h3>
+
+<pre><code>farthest_planet([{ &#39;x&#39;: 1., &#39;y&#39;: 2., &#39;z&#39;: 3. } , { &#39;x&#39;: 10., &#39;y&#39;: 20., &#39;z&#39;: 30. }]) -&gt; { &#39;x&#39;: 10., &#39;y&#39;: 20., &#39;z&#39;: 30. }
+</code></pre>
+
+<h3>Hints</h3>
+
+<ul>
+<li>The <code>math</code> module has a <code>sqrt</code> function to calculate the
+square root of a value.</li>
+</ul>
+</body></html>

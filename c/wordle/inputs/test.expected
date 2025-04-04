@@ -1,0 +1,91 @@
+=== Testing Wordle Helper Step 1 ===
+
+=== Testing vector_new() ===
+New vector created:
+  capacity: 16
+  length: 0
+  Successfully accessed first and last array elements
+Test completed.
+
+=== Testing vector_push() ===
+New vector created with capacity: 16, length: 0
+
+Adding string "hello"...
+After first push:
+  capacity: 16
+  length: 1
+  first element: hello
+
+Adding string "world"...
+After second push:
+  capacity: 16
+  length: 2
+  first element: hello
+  second element: world
+
+Testing capacity expansion...
+Adding 32 more strings...
+After adding many strings:
+  capacity: 64
+  length: 34
+  last element: test31
+Test completed.
+
+=== Testing vector_free() ===
+Created vector with 3 elements
+Calling vector_free()...
+Vector freed successfully
+Test completed.
+
+=== Testing read_words() ===
+Creating test file 'test_words.txt'...
+Reading words from test file...
+Warning: Invalid word found, skipping: pear
+Warning: Invalid word found, skipping: orange
+Warning: Invalid word found, skipping: UPPER
+Warning: Invalid word found, skipping: mix3d
+Read 4 words
+Words found (should only include valid 5-letter lowercase words):
+  Word 0: hello
+  Word 1: world
+  Word 2: apple
+  Word 3: grape
+Test file removed
+
+Testing with actual word list 'words.txt'...
+Read 2315 words from words.txt
+Sample of first few words:
+  Word 0: scowl
+  Word 1: wager
+  Word 2: tying
+  Word 3: swarm
+  Word 4: shady
+
+Every 100th word:
+  Word 0: scowl
+  Word 100: barge
+  Word 200: juicy
+  Word 300: surly
+  Word 400: sheik
+  Word 500: power
+  Word 600: atone
+  Word 700: spank
+  Word 800: leant
+  Word 900: tamer
+  Word 1000: slide
+  Word 1100: crazy
+  Word 1200: twirl
+  Word 1300: shirk
+  Word 1400: thrum
+  Word 1500: outer
+  Word 1600: alpha
+  Word 1700: creme
+  Word 1800: crick
+  Word 1900: recap
+  Word 2000: enter
+  Word 2100: alley
+  Word 2200: blurt
+  Word 2300: rifle
+
+Last word (2314): beret
+Test completed.
