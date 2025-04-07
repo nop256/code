@@ -6,8 +6,24 @@ Completed: C - Zero_with_negative: pointers practice
 
 ========================================
 Date: 2025-04-01 22:44:38
-Completed: Linked Lists: Practiced building and rewriting linked list container program for retention
+Completed: Python - Linked Lists: Practiced building and rewriting linked list container program for retention
 
 ========================================
 Date: 2025-04-02 17:32:37
-Completed: Linked Lists - Practiced rebuilding linked list method container methods logic purely from memory
+Completed: Python - Linked Lists: Practiced rebuilding linked list method container methods logic purely from memory
+
+========================================
+Date: 2025-04-03 14:27:51
+Completed: C - Bit manipulation: Wrote various bit manipulation functions to improve understanding of bits with C
+
+========================================
+Date: 2025-04-04 15:12:02
+Completed: C - Bit manipulation: Wrote a combined-bit-tool program (with comments) to reinforce understanding of bit manipulation with C
+
+========================================
+Date: 2025-04-05 19:48:22
+Completed: Python - Linked Lists: rewrote LL container logic from memory to reinforce understanding of linked lists conceptually
+
+========================================
+Date: 2025-04-06 23:41:06
+Completed: Python - BST & LL: rewrote BST and Linked List container logic from memory
