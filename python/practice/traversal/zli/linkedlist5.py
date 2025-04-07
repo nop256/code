@@ -5,8 +5,8 @@ class node:
 
 class bag:
     def __init__(self):
-        self.first = None
-    
+        self.first=None
+
     def insert(self, elt):
         if self.exists(elt):
             return False
@@ -29,9 +29,7 @@ class bag:
             return True
         current = self.first
         while current.nxt.elt != elt:
-            current = current.nxt
-        current.nxt = current.nxt.nxt
-        #current = current.nxt
+            current.nxt = current.nxt.nxt
         return True
 
     def retrieve(self, elt):
@@ -53,6 +51,5 @@ class bag:
     def __iter__(self):
         current = self.first
         while current:
-            yield current
+            yield current.elt
             current = current.nxt
-

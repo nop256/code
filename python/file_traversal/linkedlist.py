@@ -1,83 +1,72 @@
 class Node:
-    def __init__(self,item,nxt=None):
-        self.item = item
+    def __init__(self,elt,nxt=None):
+        self.elt = elt
         self.nxt = nxt        
 
 class Bag:
-    """A container class that stores unique items in an unordered manner."""
+    """A container class that stores unique elts in an unordered manner."""
 
     def __init__(self):
         self.first=None
 
-    def insert(self,item):
-        if self.exists(item):
+    def insert(self,elt):
+        if self.exists(elt):
             return False
-        n = Node(item,self.first)
+        n = Node(elt,self.first)
         self.first=n
         return True
         """
-        if self.exists(item):
+        if self.exists(elt):
             return False
         else:
-            self.bag.append(item)
+            self.bag.append(elt)
             return True
         """
-        
-    def retrieve(self,item):
+
+    def exists(self,elt):
         current = self.first
         while current:
-            if current.item == item: return current.item
+            if current.elt == elt:
+                return True
             current = current.nxt
-        return None
+        return False
         """
         for obj in self.bag:
-            if item == obj:
-                return obj
-        return None
+            if obj == elt:
+                return True
+        return False
         """
-    
-    def delete(self,item):
-        if not self.exists(item): return False
-        if self.first.item == item: 
+
+     def delete(self,elt):
+        if not self.exists(elt): return False
+        if self.first.elt == elt: 
             self.first = self.first.nxt
             return True
         current = self.first
-        while current.nxt.item != item: current = current.nxt
+        while current.nxt.elt != elt: current = current.nxt
         current.nxt = current.nxt.nxt
         return True
         """
         for obj in self.bag:
-            if obj == item:
+            if obj == elt:
                 self.bag.remove(obj)
                 return True
         return False
         """
-    
-    def __iter__(self):
-        current = self.first
-        while current:
-            yield current.item
-            current = current.nxt
-        """
-        for item in self.bag:
-            yield item
-        """
         
-
-    def exists(self,item):
+    def retrieve(self,elt):
         current = self.first
         while current:
-            if current.item == item:
-                return True
+            if current.elt == elt: return current.item
             current = current.nxt
-        return False
+        return None
         """
         for obj in self.bag:
-            if obj == item:
-                return True
-        return False
+            if elt == obj:
+                return obj
+        return None
         """
-
+    
     def size(self):
         size = 0
         current = self.first
@@ -88,9 +77,16 @@ class Bag:
         """
         return len(self.bag)
         """
-
-
-
+    
+    def __iter__(self):
+        current = self.first
+        while current:
+            yield current.elt
+            current = current.nxt
+        """
+        for elt in self.bag:
+            yield elt
+        """
 
 
 def main():
