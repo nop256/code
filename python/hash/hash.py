@@ -4,13 +4,13 @@ class student:
     def __hash__(self):
         self.ssn.replace(
 """
+
 #implemented as a hash table
 #make resizeable
 class bag:
     def __init__(self, expectedSize=101):
         size = expectedSize * 2 + 1
-        while not self.isprime(size): 
-            size += 2
+        while not self.isprime(size): size += 2
         self.table = [None] * size
         self.count = 0
         
@@ -30,10 +30,9 @@ class bag:
             slot = self.table[index]
             if slot is None: return False
             if slot != "<deleted>" and slot == elt: return True      
-            index+=1
-            if index >= len(self.table): index=0
-            if index == start:
-                return False
+            index+=1 #index (may) == len(self.table) -> out of bounds
+            if index >= len(self.table): index=0 #wrap back to start
+            if index == start: return False
             
     def insert(self, elt):
         if self.exists(elt): return False
@@ -77,19 +76,15 @@ class bag:
         start = index
         while True:
             slot = self.table[index]
-            if slot is None:
-                return None
-            if slot != "<deleted>" and slot == elt:
-                return slot
+            if slot is None: return None
+            if slot != "<deleted>" and slot == elt: return slot
             index = (index + 1) % len(self.table)
-            if index == start:
-                return None
+            if index == start: return None
     
     def size(self):
         return self.count
     
     def __iter__(self):
         for slot in self.table:
-            if slot is not None and slot != "<deleted>":
-                yield slot
+            if slot is not None and slot != "<deleted>": yield slot
                 
