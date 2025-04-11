@@ -36,7 +36,7 @@ class bag:
             
     def insert(self, elt):
         if self.exists(elt): return False
-        if self.count > (2 * len(self.table)) // 3:
+        if self.count > (2 * len(self.table)) // 3: #approximates 66% load factor threshold -> refresh with new table
             old = self.table
             newsize = len(self.table) * 2 + 1
             while not self.isprime(newsize):
