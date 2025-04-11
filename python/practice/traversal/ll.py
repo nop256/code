@@ -13,13 +13,13 @@ class bag:
         self.first = node(elt, self.first)
         return True
 
-    def retrieve(self, elt):
+    def exists(self, elt):
         current = self.first
         while current:
             if current.elt == elt:
-                return current.elt
+                return True
             current = current.nxt
-        return None
+        return False
 
     def delete(self, elt):
         if not self.exists(elt):
@@ -29,16 +29,16 @@ class bag:
             return True
         current = self.first
         while current.nxt.elt != elt:
-            current = current.nxt
+            current.nxt = current.nxt.nxt
         return True
 
-    def exists(self, elt):
+    def retrieve(self, elt):
         current = self.first
         while current:
             if current.elt == elt:
-                return True
+                return current.elt
             current = current.nxt
-        return False
+        return None
 
     def size(self):
         size = 0
