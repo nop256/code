@@ -27,3 +27,7 @@ Completed: Python - Linked Lists: rewrote LL container logic from memory to rein
 ========================================
 Date: 2025-04-06 23:41:06
 Completed: Python - BST & LL: rewrote BST and Linked List container logic from memory
+
+========================================
+Date: 2025-04-11 16:03:41
+Completed: Python - Hash: refactored file-traversal container class to use a Hash Table
