@@ -10,6 +10,8 @@ class Student:
         self.age = age
 
     def __eq__(self, rhs):
+        if not isinstance(rhs, Student):
+            return False
         return self.ss == rhs.ss
 
     def __repr__(self):
@@ -21,3 +23,5 @@ class Student:
     def __gt__(self, rhs):
         return self.ss > rhs.ss
 
+    def __hash__(self):                     # added with hash
+        return int(self.ss.replace("-",""))

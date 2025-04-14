@@ -26,3 +26,79 @@ Time Taken: 52.66 seconds
 Incorrect Responses:
   2⁴³ = 8T  -  You answered: 16T
 ========================================
+
+========================================
+Date: 2025-04-14 13:32:23
+Total Questions: 5
+Correct Answers: 4
+Incorrect Answers: 1
+Time Taken: 43.43 seconds
+Incorrect Responses:
+  2¹⁰ = 1K  -  You answered: 2K
+========================================
+
+========================================
+Date: 2025-04-14 13:32:56
+Total Questions: 5
+Correct Answers: 5
+Incorrect Answers: 0
+Time Taken: 26.03 seconds
+========================================
+
+========================================
+Date: 2025-04-14 13:33:36
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 37.53 seconds
+========================================
+
+========================================
+Date: 2025-04-14 13:34:22
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 42.23 seconds
+========================================
+
+========================================
+Date: 2025-04-14 13:35:21
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 57.43 seconds
+========================================
+
+========================================
+Date: 2025-04-14 13:35:55
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 31.69 seconds
+========================================
+
+========================================
+Date: 2025-04-14 13:36:36
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 37.18 seconds
+========================================
+
+========================================
+Date: 2025-04-14 13:37:22
+Total Questions: 10
+Correct Answers: 9
+Incorrect Answers: 1
+Time Taken: 39.98 seconds
+Incorrect Responses:
+  2³¹ = 2B  -  You answered: 1B
+========================================
+
+========================================
+Date: 2025-04-14 13:37:58
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 31.66 seconds
+========================================
