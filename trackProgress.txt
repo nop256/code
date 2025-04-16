@@ -67,3 +67,7 @@ Completed: Python - Hash Tables: refactored the completed resizeable table to us
 ========================================
 Date: 2025-04-16 01:32:38
 Completed: Python - Hash Tables: troubleshooting bugs with non-resizeable hash tables. Added circular probe exit check to break a possible infinite loop after a full probing cycle, fixed double increments of index in delete, and considering using a unique sentinel for deleted slots instead of False. Is using False as a deletion marker causing the probe to occasionally miss the correct spot?
+
+========================================
+Date: 2025-04-16 13:55:19
+Completed: C - Structs: wrote various c programs to better understand nesting of structs and moving structs by value versus using pointers to them
