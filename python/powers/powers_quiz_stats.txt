@@ -102,3 +102,37 @@ Correct Answers: 10
 Incorrect Answers: 0
 Time Taken: 31.66 seconds
 ========================================
+
+========================================
+Date: 2025-04-16 05:55:50
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 39.8 seconds
+========================================
+
+========================================
+Date: 2025-04-16 05:56:21
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 24.24 seconds
+========================================
+
+========================================
+Date: 2025-04-16 05:56:50
+Total Questions: 10
+Correct Answers: 9
+Incorrect Answers: 1
+Time Taken: 26.1 seconds
+Incorrect Responses:
+  2²⁰ = 1M  -  You answered: 2K
+========================================
+
+========================================
+Date: 2025-04-16 05:57:34
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 33.59 seconds
+========================================
