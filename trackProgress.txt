@@ -64,5 +64,6 @@ Completed: C - Structs: began writing wordle solver in C
 Date: 2025-04-15 21:33:16
 Completed: Python - Hash Tables: refactored the completed resizeable table to use a static size to test speeds with large data sets
 
-
-
+========================================
+Date: 2025-04-16 01:32:38
+Completed: Python - Hash Tables: troubleshooting bugs with non-resizeable hash tables. Added circular probe exit check to break a possible infinite loop after a full probing cycle, fixed double increments of index in delete, and considering using a unique sentinel for deleted slots instead of False. Is using False as a deletion marker causing the probe to occasionally miss the correct spot?
