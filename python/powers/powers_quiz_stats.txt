@@ -18,7 +18,7 @@ Time Taken: 29.45 seconds
 ========================================
 
 ========================================
-Date: 2025-04-02 17:35:35
+Date: 2025-04-02 18:21:08
 Total Questions: 10
 Correct Answers: 9
 Incorrect Answers: 1
@@ -28,11 +28,75 @@ Incorrect Responses:
 ========================================
 
 ========================================
+Date: 2025-04-02 19:47:40
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 50.49 seconds
+========================================
+
+========================================
+Date: 2025-04-03 14:15:51
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 49.34 seconds
+========================================
+
+========================================
+Date: 2025-04-04 09:33:44
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 40.34 seconds
+========================================
+
+========================================
+Date: 2025-04-05 10:01:19
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 39.13 seconds
+========================================
+
+========================================
+Date: 2025-04-06 20:33:45
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 40.56 seconds
+========================================
+
+========================================
+Date: 2025-04-07 13:48:17
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 38.27 seconds
+========================================
+
+========================================
+Date: 2025-04-09 13:01:49
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 41.06 seconds
+========================================
+
+========================================
+Date: 2025-04-10 16:21:36
+Total Questions: 10
+Correct Answers: 10
+Incorrect Answers: 0
+Time Taken: 42.41 seconds
+========================================
+
+========================================
 Date: 2025-04-14 13:32:23
 Total Questions: 5
 Correct Answers: 4
 Incorrect Answers: 1
-Time Taken: 43.43 seconds
+Time Taken: 39.43 seconds
 Incorrect Responses:
   2¹⁰ = 1K  -  You answered: 2K
 ========================================
@@ -42,7 +106,7 @@ Date: 2025-04-14 13:32:56
 Total Questions: 5
 Correct Answers: 5
 Incorrect Answers: 0
-Time Taken: 26.03 seconds
+Time Taken: 21.03 seconds
 ========================================
 
 ========================================
@@ -66,7 +130,7 @@ Date: 2025-04-14 13:35:21
 Total Questions: 10
 Correct Answers: 10
 Incorrect Answers: 0
-Time Taken: 57.43 seconds
+Time Taken: 37.43 seconds
 ========================================
 
 ========================================
@@ -82,7 +146,7 @@ Date: 2025-04-14 13:36:36
 Total Questions: 10
 Correct Answers: 10
 Incorrect Answers: 0
-Time Taken: 37.18 seconds
+Time Taken: 32.18 seconds
 ========================================
 
 ========================================
@@ -90,7 +154,7 @@ Date: 2025-04-14 13:37:22
 Total Questions: 10
 Correct Answers: 9
 Incorrect Answers: 1
-Time Taken: 39.98 seconds
+Time Taken: 34.98 seconds
 Incorrect Responses:
   2³¹ = 2B  -  You answered: 1B
 ========================================
@@ -100,7 +164,7 @@ Date: 2025-04-14 13:37:58
 Total Questions: 10
 Correct Answers: 10
 Incorrect Answers: 0
-Time Taken: 31.66 seconds
+Time Taken: 30.66 seconds
 ========================================
 
 ========================================
@@ -135,4 +199,36 @@ Total Questions: 10
 Correct Answers: 10
 Incorrect Answers: 0
 Time Taken: 33.59 seconds
+========================================
+
+========================================
+Date: 2025-04-16 12:37:51
+Total Questions: 50
+Correct Answers: 46
+Incorrect Answers: 4
+Time Taken: 158.52 seconds
+Incorrect Responses:
+  2⁴⁷ = 128T  -  You answered: 256T
+  2⁹ = 512  -  You answered: 5112
+  2²¹ = 2M  -  You answered: 4M
+  2¹⁰ = 1K  -  You answered: 2K
+========================================
+
+========================================
+Date: 2025-04-16 12:39:58
+Total Questions: 50
+Correct Answers: 50
+Incorrect Answers: 0
+Time Taken: 124.33 seconds
+========================================
+
+========================================
+Date: 2025-04-16 12:42:29
+Total Questions: 50
+Correct Answers: 48
+Incorrect Answers: 2
+Time Taken: 147.12 seconds
+Incorrect Responses:
+  2⁴⁰ = 1T  -  You answered: 2T
+  2¹⁰ = 1K  -  You answered: 2K
 ========================================
