@@ -29,5 +29,40 @@ Date: 2025-04-06 23:41:06
 Completed: Python - BST & LL: rewrote BST and Linked List container logic from memory
 
 ========================================
-Date: 2025-04-11 16:03:41
+Date: 2025-04-07 18:27:43
+Completed: Python - Hash Tables: began writing hash table program logic
+
+========================================
+Date: 2025-04-08 18:27:43
+Completed: Python - Hash Tables: wrote a working prime number generator for hash table size
+
+========================================
+Date: 2025-04-09 22:35:21
+Completed: Python - Hash Tables: trying to understand how to implement resizeable logic for the hash table
+
+========================================
+Date: 2025-04-10 16:03:41
 Completed: Python - Hash: refactored file-traversal container class to use a Hash Table
+
+========================================
+Date: 2025-04-11 19:48:27
+Completed: C - Bit Manipulation: revisited bit manipulation functions 
+
+========================================
+Date: 2025-04-12 23:19:01
+Completed: C - Pointers: revisited pointer functions to recommit understanding to memory 
+
+========================================
+Date: 2025-04-13 19:48:27
+Completed: Python - Linked Lists: rewrote linked lists programs from memory to reinforce understanding of circular link list logic
+
+========================================
+Date: 2025-04-14 22:08:39
+Completed: C - Structs: began writing wordle solver in C
+
+========================================
+Date: 2025-04-15 21:33:16
+Completed: Python - Hash Tables: refactored the completed resizeable table to use a static size to test speeds with large data sets
+
+
+
