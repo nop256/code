@@ -21,7 +21,7 @@ int isrectangle(struct quad q)
 	int BC = sqrt(pow((q.c.x - q.b.x),2)+pow((q.c.y - q.b.y),2));
 	int CD = sqrt(pow((q.d.x - q.c.x),2)+pow((q.d.y - q.c.y),2));
 	int DA = sqrt(pow((q.a.x - q.d.x),2)+pow((q.a.y - q.d.y),2));
-	return (AB == CD &&
+	return (AB == CD ||
 			BC == DA);
 }
 
