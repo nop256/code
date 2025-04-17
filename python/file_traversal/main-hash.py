@@ -2,7 +2,8 @@ import time
 from student import Student
 #from bag import Bag
 #from bst import Container
-from hash import bag
+#from hash import bag
+from hash2 import bag
 
 def main():
     """Reads FakeNames.txt, inserts students into a Bag, and times the process."""
@@ -14,7 +15,7 @@ def main():
     t1 = time.time()
     duplicates = 0
     try:                
-        with open("FakeNamesMedium.txt", "r") as f:
+        with open("FakeNames.txt", "r") as f:
             for line in f:
                 words = line.strip().split()
                 last, first, ss, email, age = words
@@ -91,7 +92,7 @@ def main():
                     #print(f"SSN not found for retrieval: {ssn}")
                     
     except FileNotFoundError:
-        print("Error: RetrieveNamesMedium.txt not found. Make sure the file is in the correct directory.")
+        print("Error: RetrieveNames.txt not found. Make sure the file is in the correct directory.")
         return
     r.close()
     t8 = time.time()

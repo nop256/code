@@ -232,3 +232,11 @@ Incorrect Responses:
   2⁴⁰ = 1T  -  You answered: 2T
   2¹⁰ = 1K  -  You answered: 2K
 ========================================
+
+========================================
+Date: 2025-04-16 23:08:04
+Total Questions: 50
+Correct Answers: 50
+Incorrect Answers: 0
+Time Taken: 115.8 seconds
+========================================

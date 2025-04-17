@@ -30,7 +30,7 @@ class bag:
             
     def insert(self, elt):
         if self.exists(elt): return False
-        if self.count > len(self.table) * 0.86:
+        if self.count > len(self.table) * 0.66:
             old = self.table
             newsize = len(self.table) * 2 + 1
             while not self.isprime(newsize):
