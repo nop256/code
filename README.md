@@ -1,4 +1,4 @@
-# Code Practice: C, Python, and RISC-V
+# Code Practice: C, Python
 
 This repository contains my personal programming practice files in both C and Python.  
 Each file represents a focused exercise, challenge, or concept I'm working through as I learn and improve.  
