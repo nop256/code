@@ -91,7 +91,15 @@ Incorrect Answers: 0
 Time Taken: 42.41 seconds
 ========================================
 
+=========================================
+Date: 2025-04-11 12:37:51
+Total Questions: 50
+Correct Answers: 50
+Incorrect Answers: 0
+Time Taken: 278.19 seconds
 ========================================
+
+=======================================
 Date: 2025-04-14 13:32:23
 Total Questions: 5
 Correct Answers: 4
@@ -267,4 +275,42 @@ Incorrect Answers: 1
 Time Taken: 112.38 seconds
 Incorrect Responses:
   2³⁷ = 128B  -  You answered: 128M
+========================================
+
+========================================
+Date: 2025-04-17 20:03:55
+Total Questions: 50
+Correct Answers: 49
+Incorrect Answers: 1
+Time Taken: 119.92 seconds
+Incorrect Responses:
+  2³⁰ = 1B  -  You answered: 1
+========================================
+
+========================================
+Date: 2025-04-17 20:06:20
+Total Questions: 50
+Correct Answers: 49
+Incorrect Answers: 1
+Time Taken: 114.09 seconds
+Incorrect Responses:
+  2⁸ = 256  -  You answered: 16
+========================================
+
+========================================
+Date: 2025-04-17 20:08:57
+Total Questions: 50
+Correct Answers: 49
+Incorrect Answers: 1
+Time Taken: 110.44 seconds
+Incorrect Responses:
+  2⁴⁵ = 32T  -  You answered: 8T
+========================================
+
+========================================
+Date: 2025-04-17 20:10:52
+Total Questions: 50
+Correct Answers: 50
+Incorrect Answers: 0
+Time Taken: 105.51 seconds
 ========================================
