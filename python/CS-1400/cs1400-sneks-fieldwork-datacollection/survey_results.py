@@ -1,5 +1,0 @@
-QUESTION = ""
-ANSWERS = []
-NAME = ""
-PLEDGE = """
-"""

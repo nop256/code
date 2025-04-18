@@ -1,8 +1,0 @@
-washington,george
-hamilton,alexander
-franklin,benjamin
-adams,john
-adams,samuel
-jefferson,thomas
-madison,james
-jay,john

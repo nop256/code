@@ -1,2 +1,0 @@
-WIN_PATH = []
-LOSE_PATH = []
