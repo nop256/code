@@ -10,11 +10,11 @@ Completed: Python - Linked Lists: Practiced building and rewriting linked list c
 
 ========================================
 Date: 2025-04-02 17:32:37
-Completed: Python - Linked Lists: Practiced rebuilding linked list method container methods logic purely from memory
+Completed: Python - Linked Lists: Practiced rebuilding linked list container methods logic
 
 ========================================
 Date: 2025-04-03 14:27:51
-Completed: C - Bit manipulation: Wrote various bit manipulation functions to improve understanding of bits with C
+Completed: C - Bit manipulation: Wrote various bit manipulation functions to improve understanding of bit operations with C code
 
 ========================================
 Date: 2025-04-04 15:12:02
@@ -22,7 +22,7 @@ Completed: C - Bit manipulation: Wrote a combined-bit-tool program (with comment
 
 ========================================
 Date: 2025-04-05 19:48:22
-Completed: Python - Linked Lists: rewrote LL container logic from memory to reinforce understanding of linked lists conceptually
+Completed: Python - Linked Lists: rewrote LL container logic from memory to reinforce understanding of linked lists
 
 ========================================
 Date: 2025-04-06 23:41:06
@@ -71,3 +71,15 @@ Completed: Python - Hash Tables: troubleshooting bugs with non-resizeable hash t
 ========================================
 Date: 2025-04-16 13:55:19
 Completed: C - Structs: wrote various c programs to better understand nesting of structs and moving structs by value versus using pointers to them
+
+========================================
+Date: 2025-04-17 20:19:33
+Completed: C - Structs: Practiced writing programs using nested structs and pointers
+
+========================================
+Date: 2025-04-17 20:20:02
+Completed: Python - Powers: Ran a few practice runs for the powers quiz and big-o quiz
+
+========================================
+Date: 2025-04-17 20:27:42
+Completed: Python - Hash Tables: trying to figure out an optimized prime number generator using primality caching for typical table sizes and investigating logic for a possible 6k ± 1 implementation. Maybe combining them is slightly faster?
