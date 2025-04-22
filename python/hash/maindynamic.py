@@ -2,8 +2,7 @@ import time
 from student import Student
 #from bag import Bag
 #from bst import Container
-#from hash import bag
-from hash2 import bag
+from hashdynamic import bag
 
 def main():
     """Reads FakeNames.txt, inserts students into a Bag, and times the process."""

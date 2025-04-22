@@ -1,10 +1,9 @@
 #implemented as a hash table
 #make resizeable
 class bag:
-    def __init__(self, expectedSize=101):
+    def __init__(self, expectedSize=30001):
         size = expectedSize * 2 + 1
-        while not self.isprime(size): 
-            size += 2
+        while not self.isprime(size): size += 2
         self.table = [None] * size
         self.count = 0
         
@@ -23,64 +22,49 @@ class bag:
         while True:
             if self.table[index] is None: return False
             if self.table[index] and self.table[index] == elt: return True      
-            index+=1
-            if index >= len(self.table): index=0
-            if index == start:
-                return False
+            index = (index + 1) % len(self.table)
+            if index == start: return False
             
     def insert(self, elt):
         if self.exists(elt): return False
-        if self.count > len(self.table) * 0.66:
-            old = self.table
-            newsize = len(self.table) * 2 + 1
-            while not self.isprime(newsize):
-                newsize += 2
-            self.table = [None] * newsize
-            self.count = 0
-            for entry in old:
-                if entry:
-                    self.insert(entry)  #reinsert each from old
         key = hash(elt)
         index = key % len(self.table)
         while True:
-            if self.table[index] is None or not self.table[index]:
+            if self.table[index] is None or self.table[index] is False:
                 self.table[index] = elt
                 self.count += 1
                 return True
-            index = (index+1) % len(self.table)
-            
+            index = (index + 1) % len(self.table)
+                    
     def delete(self, elt):
         key = hash(elt)
         index = key % len(self.table)
         start = index
         while True:
-            if self.table[index] is None: return False
-            if self.table[index] and self.table[index] == elt:
+            slot = self.table[index]
+            if slot is None: return False
+            if slot and slot == elt:
                 self.table[index] = False
                 self.count -= 1
                 return True
             index = (index + 1) % len(self.table)
-            if index == start:
-                return False
+            if index == start: return False
             
     def retrieve(self, elt):
         key = hash(elt)
         index = key % len(self.table)
         start = index
         while True:
-            slot = self.table[index]
-            if slot is None:
-                return None
-            if slot and slot == elt:
-                return slot
+            if self.table[index] is None: return None
+            elif self.table[index] and self.table[index] == elt: 
+                return self.table[index]
             index = (index + 1) % len(self.table)
-            if index == start:
-                return None
+            if index == start: return None
     
     def size(self):
         return self.count
     
     def __iter__(self):
-        for slot in self.table:
-            if slot: yield slot
+        for elt in self.table:
+            if elt: yield elt
                 
