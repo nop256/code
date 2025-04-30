@@ -1,0 +1,44 @@
+<html><head></head><body><h2>Count letters</h2>
+
+<p>In the file <code>letters.c</code> write a function with the following
+prototype:</p>
+
+<pre><code>void letters_used(char *line);
+</code></pre>
+
+<p>Given a line of text, it should report on which letters are used in
+the line. It should count upper- and lower-case letters, and should
+report by printing the letters used in alphabetical order and in
+lower case. For example, given the the following input as a single
+line:</p>
+
+<pre><code>When Mr Bilbo Baggins of Bag End announced that he would shortly
+be celebrating his eleventyifirst birthday with a party of
+special magnificence, there was much talk and excitement in
+Hobbiton.
+</code></pre>
+
+<p>It should print this output (including a newline at the end):</p>
+
+<pre><code>abcdefghiklmnoprstuvwxy
+</code></pre>
+
+<h2>Hints</h2>
+
+<p>Remember that characters in C are just numbers. To check if a
+character is a letter you can check if it is between &#39;a&#39; and &#39;z&#39; or
+between &#39;A&#39; and &#39;Z&#39;. You can also use the <code>isalpha</code> function in the
+standard library. Run “man isalpha” for help.</p>
+
+<p>To convert an upper-case letter to lower-case you can use the
+<code>tolower</code> function in the standard library. Run “man tolower” for
+help.</p>
+
+<p>One approach to this problem is to keep an array of booleans, one
+for each letter or each ASCII character (there are 128 characters in
+ASCII). You can use the letter itself (which is just a number) as
+the index into the array. Initialize them all to false, then as you
+scan the input you can set the array entry corresponding to each
+letter to true. Finally, loop over the array entries corresponding
+to letters and print out each letter whose entry is set to true.</p>
+</body></html>

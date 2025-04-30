@@ -1,0 +1,82 @@
+<html><head></head><body><h2>Format phone numbers</h2>
+
+<p>In the file <code>phonenumber.c</code> write a function with the following
+prototype:</p>
+
+<pre><code>void format_phone_number(char *line);
+</code></pre>
+
+<p>It is given a line of input with a 10-digit phone number, and it
+should format and print that phone number in this format:</p>
+
+<pre><code>(435) 652-5000
+</code></pre>
+
+<p>If the input is invalid, it should instead print the message:</p>
+
+<pre><code>Invalid input
+</code></pre>
+
+<p>The input has a few rules to be considered valid:</p>
+
+<ul>
+<li>The area code (the first three digits) must appear as a group of
+three digits with no spaces or punctuation between them.</li>
+<li>The prefix (the next three digits) must also appear as a group
+with nothing breaking up the three digits.</li>
+<li>The line number (the last four digits) must appear as a group.</li>
+<li>Any number of non-digits may appear before the area code,
+between the area code and the prefix, between the prefix and the
+line number, or after the line number, but no extra digits are
+permitted.</li>
+</ul>
+
+<p>So, for example, the following are valid inputs:</p>
+
+<pre><code>(435) 555-1698
+801-123-9876
+9874327654
+</code></pre>
+
+<p>But the following are not valid:</p>
+
+<pre><code>(435) 555-16982
+801-1239-876
+8-0-1-1-2-3-9-8-7-6
+</code></pre>
+
+<p>Your function should print one line of output in the correct format
+(or the &#34;Invalid input&#34; message) followed by a newline.</p>
+
+<h2>Hints</h2>
+
+<p>Avoid <code>sscanf</code> and similar functions for this problem. They are
+great when you know the precise format of the input, but are not
+well suited to a problem like this where you need to be flexible
+about the input.</p>
+
+<p>Instead, treat your input an a simple array of characters. Starting
+at the beginning of the string, follow a sequence like this:</p>
+
+<ul>
+<li>Skip over all the non-digits at the beginning of the string</li>
+<li>Check if there are exactly 3 digits in a row for the area code
+and remember where they are/copy them.</li>
+<li>Skip over any non-digits after the area code.</li>
+<li>Check if there are exactly 3 digits in a row for the prefix
+code and remember where they are/copy them.</li>
+<li>Skip over any non-digits after the prefix.</li>
+<li>Check for exactly 4 digits for the line number and remember
+them/copy them.</li>
+<li>Skip over any non-digits after the line number.</li>
+<li>Make sure you have reached the end of the string.</li>
+</ul>
+
+<p>To check for a sequence of digits you can use something like:</p>
+
+<pre><code>if (isdigit(line[i]) &amp;&amp; isdigit(line[i+1]) &amp;&amp; isdigit(line[i+2]))
+</code></pre>
+
+<p>One you have located the groups of digits and validated them, print
+the three groups of digits with the correct format.</p>
+</body></html>
