@@ -1,11 +1,11 @@
 import time
 from student import Student
 #from bag import Bag
-from bst import Container
+from bst5 import bag 
 
 def main():
     """Reads FakeNames.txt, inserts students into a Bag, and times the process."""
-    b = Container()
+    b = bag()
 
     
     print(f"\nInserting...")
