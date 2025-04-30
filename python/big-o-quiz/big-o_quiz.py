@@ -7,9 +7,9 @@ questions = {
     "Adding two numbers of N digits each": "n",
     "Linear Search": "n",
     "Towers of Hanoi": "2^n",
-    "Factoring a number": "sqrt n",
+    "Factoring a number": "sqrtn",
     "Matrix Multiplication": "n^3",
-    "Binary Search": "log n",
+    "Binary Search": "logn",
     "SAT Problem (brute force)": "2^n",
     "Multiplying two N-digit numbers": "n^2",
 
@@ -19,13 +19,13 @@ questions = {
     "Shaker Sort (mostly sorted data)": "n",
     "Counting Sort (random data)": "n",
     "Counting Sort (mostly sorted data)": "n",
-    "Merge Sort (random data)": "n log n",
-    "Merge Sort (mostly sorted data)": "n log n",
-    "Quick Sort (random data)": "n log n",
-    "Quick Sort (mostly sorted data, median-of-three pivot strategy)": "n log n",
+    "Merge Sort (random data)": "nlogn",
+    "Merge Sort (mostly sorted data)": "nlogn",
+    "Quick Sort (random data)": "nlogn",
+    "Quick Sort (mostly sorted data, median-of-three pivot strategy)": "nlogn",
     "Quick Sort (mostly sorted data, naive (1st or last) pivot strategy)": "n^2",
-    "Modified Quick Sort (random data)": "n log n",
-    "Modified Quick Sort (mostly sorted data)": "n log n"
+    "Modified Quick Sort (random data)": "nlogn",
+    "Modified Quick Sort (mostly sorted data)": "nlogn"
 }
 
 question_list = list(questions.items())
